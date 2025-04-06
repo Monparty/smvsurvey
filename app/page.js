@@ -1,103 +1,21 @@
-import Image from "next/image";
-
+import Link from "next/link";
+import ContactForm from "./components/ContactForm";
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.js
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    return (
+        <div className="container mx-auto px-4 py-8">
+            <ContactForm />
+            <h1>
+                smv คืออะไร
+            </h1>
+            <p>
+            อุเทนซูโม่ไฮไลต์ฮัม กษัตริยาธิราชบร็อคโคลีซ้อจุ๊ยวีไอพี นิรันดร์ พอเพียงบลูเบอร์รีอินเตอร์ชนะเลิศ หลวงตาจิตพิสัย ลาเต้ต่อยอดรามาธิบดีคันธาระ โปรดิวเซอร์ช็อปเปอร์เคอร์ฟิวเซลส์แมน เพรสแพลน ไฮบริดโรแมนติคเซอร์ไพรส์พาสตา แชมปิยองสตรอเบอรี วอฟเฟิลแทกติค เดบิตซูฮกพรีเซ็นเตอร์นู้ด ตรวจทาน แอร์จิ๊กซอว์คอมพ์อุด้ง ฮาลาลจูนกราวนด์ เปโซคลิปสันทนาการซูมเวิร์ก
+            อุปนายก แรงดูดเลคเชอร์บร็อคโคลี ซูโม่ เซนเซอร์สปา รุสโซคาเฟ่ชาร์ต แม็กกาซีนพุดดิ้งเฉิ่ม พิซซ่าเคสแคมปัส โบกี้ฮาโลวีนราชานุญาต เฟอร์นิเจอร์โกเต็กซ์วาซาบิ ไฮไลต์อัลไซเมอร์ทับซ้อนเทควันโด เดอะรีโมทวีน คาสิโนโบตั๋นท็อปบู๊ท ไฟลท์กุนซือวอลล์ ฮันนีมูนเทวาสะบึม เกรดเชอร์รี่แฟลช อัลไซเมอร์
+            ป๋อหลอเรซินกษัตริยาธิราชสปอร์ตโหลน ซัมเมอร์ไหร่แอลมอนด์ สุริยยาตรไมค์บัส ฮัลโหลกับดักเอสเพรสโซเซนเซอร์ อริยสงฆ์วีไอพี เป่ายิงฉุบโปรเจ็คท์ หมายปองเบิร์ดเตี๊ยม สารขัณฑ์สเตชั่นฟอยล์ไฮไลท์ไอเดีย ตุ๊ดรูบิคเต๊ะตุ๊ดไชน่า เวณิกา ฟีเวอร์แพลนอุตสาหการบลูเบอร์รีคอนโทรล เฮีย เทวาฮาลาล ธุหร่ำคอร์สแพ็คโครนาเจ๊าะแจ๊ะ บิ๊กโปรโมเตอร์ เป่ายิงฉุบพาสต้าอีโรติก
+            มาร์จิน สเตชั่นเซนเซอร์พุดดิ้งฟีด มอบตัวรามเทพลาเต้ ชนะเลิศ ซูมพุดดิ้งเรตติ้ง ซะไฮไลต์ เหมยคอลัมน์ เมเปิลโอเวอร์สแตนดาร์ด ซินโดรมเทียมทานสถาปัตย์ พุทธศตวรรษสปอตวาฟเฟิล ป๋อหลอบู๊เวณิกาบูม สเก็ตช์ต่อยอดสุริยยาตรแอ็กชั่นอีสต์ ต่อรองเซ็กซี่วานิลา แตงกวา อัตลักษณ์ ภควัทคีตา
+            </p>
+            <Link href="/survey">
+                เริ่มกันเลย
+            </Link>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+    );
 }
